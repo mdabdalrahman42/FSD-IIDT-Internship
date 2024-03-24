@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #3498db;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .item {
+            flex: 1 1 300px;
+            background-color: #fff;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+
+        .item:hover {
+            transform: translateY(-5px);
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .item {
+                width: calc(100% - 80px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+
+    <div class="container">
+        <div class="item">
+            <h2>Project 1</h2>
+            <p>Description of project 1</p>
+        </div>
+        <div class="item">
+            <h2>Project 2</h2>
+            <p>Description of project 2</p>
+        </div>
+        <div class="item">
+            <h2>Project 3</h2>
+            <p>Description of project 3</p>
+        </div>
+        <div class="item">
+            <h2>Project 4</h2>
+            <p>Description of project 4</p>
+        </div>
+        <div class="item">
+            <h2>Project 5</h2>
+            <p>Description of project 5</p>
+        </div>
+        <div class="item">
+            <h2>Project 6</h2>
+            <p>Description of project 6</p>
+        </div>
+    </div>
+</body>
+</html>
