@@ -1,0 +1,16 @@
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .book-row {
+    display: flex;
+    width: 100%;
+  }
+  
+  .book-column {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
