@@ -1,0 +1,55 @@
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 175px;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.company-heading {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.search-box {
+  background-color: #444;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #666;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  font-size: 16px;
+  background-color: #555;
+  color: #fff;
+  outline: none;
+}
+
+.menu {
+  list-style-type: none;
+  padding-left: 10px;
+  margin: 0;
+}
+
+.menu li {
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+.menu li:hover {
+  color: #ccc;
+}
