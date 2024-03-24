@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Change Background Color</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+
+        .colorBox {
+            width: 350px;
+            height: 60px;
+            font-size: 25px;
+            color: white;
+            font-weight: bold;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="colorBox" id="colorBox">Background Color:&nbsp;<span id="colorCode" style="color: blue;">#FFFFFF</span>
+    </div>
+    <button id="changeColorButton" onclick="changeBackgroundColor()">CLICK ME</button>
+
+    <script>
+        function changeBackgroundColor() {
+            var randomColor = getRandomColor();
+            document.body.style.backgroundColor = randomColor;
+            document.getElementById('colorCode').textContent = randomColor;
+            document.getElementById('colorCode').style.color = "blue";
+            document.getElementById('changeColorButton').style.backgroundColor = randomColor;
+        }
+
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+    </script>
+
+</body>
+
+</html>
